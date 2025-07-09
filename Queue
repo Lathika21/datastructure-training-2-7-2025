@@ -1,0 +1,36 @@
+from collections import deque
+
+queue = deque(["Compiler", "Firewall", "Algorithm", "Protocol", "Cache"])
+
+deq1 = queue.popleft()
+deq2 = queue.popleft()
+print("Q1 Dequeued elements:", deq1, ",", deq2)
+print("Queue after Q1:", list(queue))
+
+queue.append("Virtualization")
+print("Q2 Queue after enqueue:", list(queue))
+
+
+deq3 = queue.popleft()
+print("Q3 Dequeued:", deq3)
+print("Queue after Q3:", list(queue))
+
+queue.append("Cloud")
+print("Q4 Queue after enqueue:", list(queue))
+
+
+present = "Protocol" in queue
+print("Q5 Is 'Protocol' present?", "Yes" if present else "No")
+
+
+queue.append("Machine Learning")
+print("Q6 Queue after enqueue:", list(queue))
+
+
+deq_final = queue.popleft()
+print("Q7 Final Dequeued:", deq_final)
+print("Final Queue:", list(queue))
+
+print("\nQ8 Concept Check:")
+print("Element at position 3 in original queue: 'Algorithm' → Dequeued in Q3")
+print("Element at position 4 in original queue: 'Protocol' → Dequeued in Q7")
