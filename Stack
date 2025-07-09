@@ -1,0 +1,58 @@
+def Q1():
+    stack = []
+    stack.append("Carrot")
+    stack.append("Tomato")
+    stack.append("Onion")
+    stack.pop() 
+    stack.append("Potato")
+    stack.pop() 
+    return stack
+
+def Q2():
+    stack = ["Brinjal", "Beans", "Cabbage"]
+    stack.pop()             
+    stack.append("Pumpkin")
+    stack.append("Radish")
+    return stack[-1]        
+
+def Q3():
+    return True
+
+def Q4():
+    stack = []
+    stack.append("Spinach")
+    stack.append("Beetroot")
+    stack.pop() 
+    stack.append("Cauliflower")
+    stack.append("Ladyfinger")
+    stack.pop()  
+    return stack
+
+def Q5():
+    stack = []
+    stack.append("Turnip")
+    stack.append("Radish")
+    stack.append("Broccoli")
+    stack.pop() 
+    stack.append("Capsicum")
+    return stack
+    
+def main():
+    print("Q1: Stack content from bottom to top:")
+    print("Answer:", Q1())
+    
+    print("\nQ2: What is now at the top of the stack?")
+    print("Answer:", Q2())
+
+    print("\nQ3: The last vegetable pushed onto the stack is always the first to be popped.")
+    print("Answer:", "True" if Q3() else "False")
+
+    print("\nQ4: Vegetables remaining in the stack:")
+    print("Answer:", Q4())
+
+    print("\nQ5: Final stack from bottom to top after operations:")
+    print("Answer:", Q5())
+
+if __name__ == "__main__":
+    main()
+    
